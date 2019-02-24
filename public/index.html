@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chat za pravu raju</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+      <!--  <link href="/styles.css" rel="stylesheet" /> -->
+        <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </head>
+    <body>
+        <h1 class="center align">CHAT ZA MOJU RAJU</h1>
+        <div class="container">
+            <div class="row teal lighten-2">
+
+            
+                  <div  id="chat-window" >
+                        <div class="col12" id="output" ></div>
+                        <div class ="col12" id="feedback"></div>
+                    </div> <br> <br> <br>
+                </div>
+            <div class="input-field col">
+            <input id="handle" type="text" placeholder="Nickname" required/>
+            </div>
+            <div class="input-field"> 
+            <input id="message" type="text" placeholder="Message" required />
+            </div>
+             <div class="center"> 
+                    <button id="send" class="btn waves-effect waves-light">Send message</button>
+          </div>   
+            </div>
+        </div>
+</div>
+
+
+    </body>
+    <script src="/chat.js"></script>
+</html>
